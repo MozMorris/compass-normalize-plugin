@@ -1,6 +1,11 @@
 # normalize.css - Compass Plugin
 A Compass plugin of Nicolas Gallagher's normalize.css project.
 
+## Installation
+Check out the [gem on rubygems.org](https://rubygems.org/gems/compass-normalize-plugin).
+
+  $ gem install compass-normalize-plugin
+
 ## Usage
 Execute the following command to create a new project with compass, using normalize.css:
 
