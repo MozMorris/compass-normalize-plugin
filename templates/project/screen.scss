@@ -1,0 +1,32 @@
+@import "normalize";
+
+@include normalize;
+
+// It is also possible to use only parts of normalize.css
+// 
+// @import "normalize/html5";
+// @include normalize-html5;
+// 
+// @import "normalize/base";
+// @include normalize-base;
+// 
+// @import "normalize/links";
+// @include normalize-links;
+//
+// @import "normalize/typography";
+// @include normalize-typography;
+// 
+// @import "normalize/lists";
+// @include normalize-lists;
+// 
+// @import "normalize/embedded";
+// @include normalize-embedded;
+// 
+// @import "normalize/figures";
+// @include normalize-figures;
+// 
+// @import "normalize/forms";
+// @include normalize-forms;
+// 
+// @import "normalize/tables";
+// @include normalize-tables;
