@@ -12,12 +12,12 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://roettger.us/}
 
 	s.files = [
-		"CHANGELOG.mk",
+		"CHANGELOG.md",
 		"compass-normalize-plugin.gemspec",
 		"lib/normalize.rb",	
 		"Manifest",
 		"Rakefile",
-		"README.mk",
+		"README.md",
 		"scss/",
 		"scss/_normalize.scss",
 		"scss/normalize/",
