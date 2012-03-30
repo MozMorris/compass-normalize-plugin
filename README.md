@@ -29,15 +29,51 @@ or include and use only parts of it:
     @include normalize-base;
 
 ## Available mixins and imports
-- `@include normalize-html5;` (`@import "normalize/html5";`)
-- `@include normalize-base;` (`@import "normalize/base";`)
-- `@include normalize-links;` (`@import "normalize/links";`)
-- `@include normalize-typography;` (`@import "normalize/typography";`)
-- `@include normalize-lists;` (`@import "normalize/lists";`)
-- `@include normalize-embedded;` (`@import "normalize/embedded";`)
-- `@include normalize-figures;` (`@import "normalize/figures";`)
-- `@include normalize-forms;` (`@import "normalize/forms";`)
-- `@include normalize-tables;` (`@import "normalize/tables";`)
+<table>
+	<thead>
+		<tr>
+			<th>import</th>
+			<th>mixin</th>
+		</tr>
+	</thead>
+	<tbody>
+    	<tr>
+        	<td>normalize-html5</td>
+        	<td>normalize/html5</td>
+    	</tr>
+    	<tr>
+        	<td>normalize-base</td>
+        	<td>normalize/base</td>
+    	</tr>
+    	<tr>
+        	<td>normalize-links</td>
+        	<td>normalize/links</td>
+    	</tr>
+    	<tr>
+        	<td>normalize-typography</td>
+        	<td>normalize/typography</td>
+    	</tr>
+    	<tr>
+        	<td>normalize-lists</td>
+        	<td>normalize/lists</td>
+    	</tr>
+    	<tr>
+        	<td>normalize-embedded</td>
+        	<td>normalize/embedded</td>
+    	</tr>
+    	<tr>
+        	<td>normalize-figures</td>
+        	<td>normalize/figures</td>
+    	</tr>
+    	<tr>
+        	<td>normalize-forms</td>
+        	<td>normalize/forms</td>
+    	</tr>
+    	<tr>
+        	<td>normalize-tables</td>
+        	<td>normalize/tables</td>
+    	</tr>
+</table>
 
 ## License
 Public domain
