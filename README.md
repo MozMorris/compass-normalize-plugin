@@ -29,15 +29,15 @@ or include and use only parts of it:
     @include normalize-base;
 
 ## Available mixins and imports
-- normalize-html5 (@import "normalize/html5";)
-- normalize-base (@import "normalize/base";)
-- normalize-links (@import "normalize/links";)
-- normalize-typography (@import "normalize/typography";)
-- normalize-lists (@import "normalize/lists";)
-- normalize-embedded (@import "normalize/embedded";)
-- normalize-figures (@import "normalize/figures";)
-- normalize-forms (@import "normalize/forms";)
-- normalize-tables (@import "normalize/tables";)
+- `@include normalize-html5;` (`@import "normalize/html5";`)
+- `@include normalize-base;` (`@import "normalize/base";`)
+- `@include normalize-links;` (`@import "normalize/links";`)
+- `@include normalize-typography;` (`@import "normalize/typography";`)
+- `@include normalize-lists;` (`@import "normalize/lists";`)
+- `@include normalize-embedded;` (`@import "normalize/embedded";`)
+- `@include normalize-figures;` (`@import "normalize/figures";`)
+- `@include normalize-forms;` (`@import "normalize/forms";`)
+- `@include normalize-tables;` (`@import "normalize/tables";`)
 
 ## License
 Public domain
