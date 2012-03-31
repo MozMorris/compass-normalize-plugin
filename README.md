@@ -34,24 +34,30 @@ Version 0.2 introduces some global configuration variables to remove unwanted op
 different browsers. The default configuration includes support for all browsers. The following 
 variables can be set to either `true` of `false` (default is `true`):
 
+    // Internet Explorer
     $include-ie-normalization
     $include-ie6-normalization
     $include-ie7-normalization
     $include-ie8-normalization
     $include-ie9-normalization
+    
     // Firefox
     $include-ff-normalization
+    
     // Safari
     $include-sa-normalization
+    
     // iOS
     $include-ios-normalization
+    
     // Chrome
     $include-chr-normalization
+    
     // Opera
     $include-op-normalization
 
-The settings are processed using `or`, thus settings `$include-ie-normalization: true;` will
-include *all* IE normalization, even if `$include-ie6-normalization` is set to `false`.
+The settings are processed using or, thus settings $include-ie-normalization: true; will include
+all IE normalization, even if $include-ie6-normalization is set to false.
 
 ## Available mixins and imports
 <table>

@@ -1,10 +1,10 @@
 @mixin normalize-typography {
-	@if $include-ie-normalization
-	 or $include-ie6-normalization
-	 or $include-ie7-normalization
-	 or $include-ff-normalization
-	 or $include-chr-normalization,
-	 or $include-sa-normalization {
+	@if ($include-ie-normalization
+	 or  $include-ie6-normalization
+	 or  $include-ie7-normalization
+	 or  $include-ff-normalization
+	 or  $include-chr-normalization
+	 or  $include-sa-normalization) {
 		// Addresses font sizes and margins set differently in IE6/7
 		// Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
 		h1 {
@@ -38,21 +38,21 @@
 		}
 	}
 
-	@if $include-ie-normalization
-	 or $include-ie7-normalization
-	 or $include-ie8-normalization
-	 or $include-ie9-normalization
-	 or $include-sa-normalization
-	 or $include-chr-normalization {
+	@if ($include-ie-normalization
+	 or  $include-ie7-normalization
+	 or  $include-ie8-normalization
+	 or  $include-ie9-normalization
+	 or  $include-sa-normalization
+	 or  $include-chr-normalization) {
 		// Addresses styling not present in IE7/8/9, S5, Chrome
 		abbr[title] {
 		  border-bottom: 1px dotted;
 		}
 	}
 
-	@if $include-ff-normalization
-	 or $include-sa-normalization
-	 or $include-chr-normalization {
+	@if ($include-ff-normalization
+	 or  $include-sa-normalization
+	 or  $include-chr-normalization) {
 		// Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 		b,
 		strong {
@@ -64,19 +64,19 @@
 	  margin: 1em 40px;
 	}
 
-	@if $include-sa-normalization
-	 or $include-chr-normalization {
+	@if ($include-sa-normalization
+	 or  $include-chr-normalization) {
 		// Addresses styling not present in S5, Chrome
 		dfn {
 		  font-style: italic;
 		}
 	}
 
-	@if $include-ie-normalization
-	 or $include-ie6-normalization
-	 or $include-ie7-normalization
-	 or $include-ie8-normalization
-	 or $include-ie9-normalization {
+	@if ($include-ie-normalization
+	 or  $include-ie6-normalization
+	 or  $include-ie7-normalization
+	 or  $include-ie8-normalization
+	 or  $include-ie9-normalization) {
 		// Addresses styling not present in IE6/7/8/9
 		mark {
 		  background: #ff0;
@@ -84,9 +84,9 @@
 		}
 	}
 
-	@if $include-ie-normalization
-	 or $include-ie6-normalization
-	 or $include-ie7-normalization {
+	@if ($include-ie-normalization
+	 or  $include-ie6-normalization
+	 or  $include-ie7-normalization) {
 		// Addresses margins set differently in IE6/7
 		p,
 		pre {
@@ -94,10 +94,10 @@
 		}
 	}
 
-	@if $include-ie-normalization
-	 or $include-ie6-normalization
-	 or $include-sa-normalization
-	 or $include-chr-normalization {
+	@if ($include-ie-normalization
+	 or  $include-ie6-normalization
+	 or  $include-sa-normalization
+	 or  $include-chr-normalization) {
 		// Corrects font family set oddly in IE6, S4/5, Chrome
 		// en.wikipedia.org/wiki/User:Davidgothberg/Test59
 		pre,
@@ -117,9 +117,9 @@
 	  word-wrap: break-word;
 	}
 
-	@if $include-ie-normalization
-	 or $include-ie6-normalization
-	 or $include-ie7-normalization {
+	@if ($include-ie-normalization
+	 or  $include-ie6-normalization
+	 or  $include-ie7-normalization) {
 		// Addresses CSS quotes not supported in IE6/7
 		q {
 		  quotes: none;

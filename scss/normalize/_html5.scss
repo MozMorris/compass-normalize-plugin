@@ -1,10 +1,10 @@
 @mixin normalize-html5 {
-	@if $include-ie-normalization
-	 or $include-ie6-normalization
-	 or $include-ie7-normalization
-	 or $include-ie8-normalization
-	 or $include-ie9-normalization
-	 or $include-ff-normalization {
+	@if ($include-ie-normalization
+	 or  $include-ie6-normalization
+	 or  $include-ie7-normalization
+	 or  $include-ie8-normalization
+	 or  $include-ie9-normalization
+	 or  $include-ff-normalization) {
 		// Corrects block display not defined in IE6/7/8/9 & FF3
 		article,
 		aside,
@@ -37,12 +37,12 @@
 	  height: 0;
 	}
 
-	@if $include-ie-normalization
-	 or $include-ie7-normalization
-	 or $include-ie8-normalization
-	 or $include-ie9-normalization
-	 or $include-ff-normalization
-	 or $include-sa-normalization {
+	@if ($include-ie-normalization
+	 or  $include-ie7-normalization
+	 or  $include-ie8-normalization
+	 or  $include-ie9-normalization
+	 or  $include-ff-normalization
+	 or  $include-sa-normalization) {
 		// Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
 		// Known issue: no IE6 support
 		[hidden] {

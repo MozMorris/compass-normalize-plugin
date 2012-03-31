@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.version = "0.2"
+  s.version = "0.2.1"
   s.date = %q{2012-03-31}
 
   s.name = %q{compass-normalize-plugin}
