@@ -1,77 +1,113 @@
 @mixin normalize-typography {
-	// Addresses font sizes and margins set differently in IE6/7
-	// Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
-	h1 {
-	  font-size: 2em;
-	  margin: 0.67em 0;
+	@if $include-ie-normalization
+	 or $include-ie6-normalization
+	 or $include-ie7-normalization
+	 or $include-ff-normalization
+	 or $include-chr-normalization,
+	 or $include-sa-normalization {
+		// Addresses font sizes and margins set differently in IE6/7
+		// Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
+		h1 {
+		  font-size: 2em;
+		  margin: 0.67em 0;
+		}
+
+		h2 {
+		  font-size: 1.5em;
+		  margin: 0.83em 0;
+		}
+
+		h3 {
+		  font-size: 1.17em;
+		  margin: 1em 0;
+		}
+
+		h4 {
+		  font-size: 1em;
+		  margin: 1.33em 0;
+		}
+
+		h5 {
+		  font-size: 0.83em;
+		  margin: 1.67em 0;
+		}
+
+		h6 {
+		  font-size: 0.75em;
+		  margin: 2.33em 0;
+		}
 	}
 
-	h2 {
-	  font-size: 1.5em;
-	  margin: 0.83em 0;
+	@if $include-ie-normalization
+	 or $include-ie7-normalization
+	 or $include-ie8-normalization
+	 or $include-ie9-normalization
+	 or $include-sa-normalization
+	 or $include-chr-normalization {
+		// Addresses styling not present in IE7/8/9, S5, Chrome
+		abbr[title] {
+		  border-bottom: 1px dotted;
+		}
 	}
 
-	h3 {
-	  font-size: 1.17em;
-	  margin: 1em 0;
-	}
-
-	h4 {
-	  font-size: 1em;
-	  margin: 1.33em 0;
-	}
-
-	h5 {
-	  font-size: 0.83em;
-	  margin: 1.67em 0;
-	}
-
-	h6 {
-	  font-size: 0.75em;
-	  margin: 2.33em 0;
-	}
-
-	// Addresses styling not present in IE7/8/9, S5, Chrome
-	abbr[title] {
-	  border-bottom: 1px dotted;
-	}
-
-	// Addresses style set to 'bolder' in FF3+, S4/5, Chrome
-	b,
-	strong {
-	  font-weight: bold;
+	@if $include-ff-normalization
+	 or $include-sa-normalization
+	 or $include-chr-normalization {
+		// Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+		b,
+		strong {
+		  font-weight: bold;
+		}
 	}
 
 	blockquote {
 	  margin: 1em 40px;
 	}
 
-	// Addresses styling not present in S5, Chrome
-	dfn {
-	  font-style: italic;
+	@if $include-sa-normalization
+	 or $include-chr-normalization {
+		// Addresses styling not present in S5, Chrome
+		dfn {
+		  font-style: italic;
+		}
 	}
 
-	// Addresses styling not present in IE6/7/8/9
-	mark {
-	  background: #ff0;
-	  color: #000;
+	@if $include-ie-normalization
+	 or $include-ie6-normalization
+	 or $include-ie7-normalization
+	 or $include-ie8-normalization
+	 or $include-ie9-normalization {
+		// Addresses styling not present in IE6/7/8/9
+		mark {
+		  background: #ff0;
+		  color: #000;
+		}
 	}
 
-	// Addresses margins set differently in IE6/7
-	p,
-	pre {
-	  margin: 1em 0;
+	@if $include-ie-normalization
+	 or $include-ie6-normalization
+	 or $include-ie7-normalization {
+		// Addresses margins set differently in IE6/7
+		p,
+		pre {
+		  margin: 1em 0;
+		}
 	}
 
-	// Corrects font family set oddly in IE6, S4/5, Chrome
-	// en.wikipedia.org/wiki/User:Davidgothberg/Test59
-	pre,
-	code,
-	kbd,
-	samp {
-	  font-family: monospace, serif;
-	  _font-family: 'courier new', monospace;
-	  font-size: 1em;
+	@if $include-ie-normalization
+	 or $include-ie6-normalization
+	 or $include-sa-normalization
+	 or $include-chr-normalization {
+		// Corrects font family set oddly in IE6, S4/5, Chrome
+		// en.wikipedia.org/wiki/User:Davidgothberg/Test59
+		pre,
+		code,
+		kbd,
+		samp {
+		  font-family: monospace, serif;
+		  _font-family: 'courier new', monospace;
+		  font-size: 1em;
+		}
 	}
 
 	// Improves readability of pre-formatted text in all browsers
@@ -81,16 +117,22 @@
 	  word-wrap: break-word;
 	}
 
-	// Addresses CSS quotes not supported in IE6/7
-	q {
-	  quotes: none;
+	@if $include-ie-normalization
+	 or $include-ie6-normalization
+	 or $include-ie7-normalization {
+		// Addresses CSS quotes not supported in IE6/7
+		q {
+		  quotes: none;
+		}
 	}
 
-	// Addresses quote property not supported in S4
-	q:before,
-	q:after {
-	  content: '';
-	  content: none;
+	@if $include-sa-normalization {
+		// Addresses quote property not supported in S4
+		q:before,
+		q:after {
+		  content: '';
+		  content: none;
+		}
 	}
 
 	small {

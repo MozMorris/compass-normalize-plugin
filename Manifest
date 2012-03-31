@@ -4,6 +4,7 @@ lib/normalize.rb
 Manifest
 Rakefile
 README.md
+scss/_config.scss
 scss/_normalize.scss
 scss/normalize/_base.scss
 scss/normalize/_embedded.scss

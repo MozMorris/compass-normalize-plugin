@@ -1,9 +1,11 @@
 @mixin normalize-links {
 	a {
-	  // Addresses outline displayed oddly in Chrome
-	  &:focus {
-	    outline: thin dotted;
-	  }
+		@if $include-chr-normalization {
+	  	// Addresses outline displayed oddly in Chrome
+		  &:focus {
+		    outline: thin dotted;
+		  }
+		}
 
 	  // Improves readability when focused and also mouse hovered in all browsers
 	  // people.opera.com/patrickl/experiments/keyboard/test

@@ -1,5 +1,6 @@
 # normalize.css - Compass Plugin
-A Compass plugin of [Nicolas Gallagher's normalize.css](https://github.com/necolas/normalize.css/) project.
+A Compass plugin of [Nicolas Gallagher's normalize.css](https://github.com/necolas/normalize.css/)
+project.
 
 ## Installation
 Check out the [gem on rubygems.org](https://rubygems.org/gems/compass-normalize-plugin).
@@ -27,6 +28,30 @@ or include and use only parts of it:
     
     @include normalize-html5;
     @include normalize-base;
+
+## Configuration
+Version 0.2 introduces some global configuration variables to remove unwanted optimizations for
+different browsers. The default configuration includes support for all browsers. The following 
+variables can be set to either `true` of `false` (default is `true`):
+
+    $include-ie-normalization
+    $include-ie6-normalization
+    $include-ie7-normalization
+    $include-ie8-normalization
+    $include-ie9-normalization
+    // Firefox
+    $include-ff-normalization
+    // Safari
+    $include-sa-normalization
+    // iOS
+    $include-ios-normalization
+    // Chrome
+    $include-chr-normalization
+    // Opera
+    $include-op-normalization
+
+The settings are processed using `or`, thus settings `$include-ie-normalization: true;` will
+include *all* IE normalization, even if `$include-ie6-normalization` is set to `false`.
 
 ## Available mixins and imports
 <table>
@@ -79,5 +104,8 @@ or include and use only parts of it:
 Public domain
 
 ## Acknowledgements
-* [Normalize.css](https://github.com/necolas/normalize.css/) is a project by [Nicolas Gallagher](http://github.com/necolas) and [Jonathan Neal](http://github.com/jonathantneal).
-* [compass-normalize-plugin](https://github.com/jroettger/compass-normalize-plugin) is a [Compass](http://compass-style.org) plugin by [Johannes Röttger](http://github.com/jroettger).
+* [Normalize.css](https://github.com/necolas/normalize.css/) is a project by
+[Nicolas Gallagher](http://github.com/necolas) and
+[Jonathan Neal](http://github.com/jonathantneal).
+* [compass-normalize-plugin](https://github.com/jroettger/compass-normalize-plugin) is a
+[Compass](http://compass-style.org) plugin by [Johannes Röttger](http://github.com/jroettger).

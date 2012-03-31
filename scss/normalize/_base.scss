@@ -4,9 +4,16 @@
 	// 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
 	//    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
 	html {
-	  font-size: 100%; /* 1 */
-	  -webkit-text-size-adjust: 100%; /* 2 */
-	  -ms-text-size-adjust: 100%; /* 2 */
+		@if $include-ie-normalization
+		 or $include-ie6-normalization
+		 or $include-ie7-normalization {
+	  	font-size: 100%; // 1
+		}
+		
+		@if $include-ios-normalization {
+	  	-webkit-text-size-adjust: 100%; // 2
+	  	-ms-text-size-adjust: 100%; // 2
+		}
 	}
 
 	// Addresses font-family inconsistency between 'textarea' and other form elements.
@@ -18,8 +25,12 @@
 	  font-family: sans-serif;
 	}
 
-	// Addresses margins handled incorrectly in IE6/7
-	body {
-	  margin: 0;
+	@if $include-ie-normalization
+	 or $include-ie6-normalization
+	 or $include-ie7-normalization {
+		// Addresses margins handled incorrectly in IE6/7
+		body {
+		  margin: 0;
+		}
 	}
 }

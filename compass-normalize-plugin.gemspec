@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.version = "0.1"
-  s.date = %q{2012-03-29}
+  s.version = "0.2"
+  s.date = %q{2012-03-31}
 
   s.name = %q{compass-normalize-plugin}
   s.authors = ["Johannes Roettger", "Nicolas Gallagher", "Jonathan Neal"]
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
 		"Rakefile",
 		"README.md",
 		"scss/",
+		"scss/_config.scss",
 		"scss/_normalize.scss",
 		"scss/normalize/",
 		"scss/normalize/_base.scss",

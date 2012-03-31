@@ -1,14 +1,28 @@
 @mixin normalize-embedded {
-	// 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
-	// 2. Improves image quality when scaled in IE7
-	//     code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
 	img {
-	  border: 0; // 1
-	  -ms-interpolation-mode: bicubic; // 2
+		@if $include-ie-normalization
+		 or $include-ie6-normalization
+		 or $include-ie7-normalization
+		 or $include-ie8-normalization
+		 or $include-ie9-normalization
+		 or $include-ff-normalization {
+			// Removes border when inside 'a' element in IE6/7/8/9, FF3
+	  	border: 0; 
+		}
+		
+		@if $include-ie-normalization
+		 or $include-ie7-normalization {
+			// Improves image quality when scaled in IE7
+			// code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+		  -ms-interpolation-mode: bicubic;
+		}
 	}
 
-	// Corrects overflow displayed oddly in IE9
-	svg:not(:root) {
-	  overflow: hidden;
+	@if $include-ie-normalization
+	 or $include-ie9-normalization {
+		// Corrects overflow displayed oddly in IE9
+		svg:not(:root) {
+		  overflow: hidden;
+		}
 	}
 }
