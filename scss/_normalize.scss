@@ -11,13 +11,13 @@
 @import "normalize/tables";
 
 @mixin normalize {
-	@include normalize-html5;
-	@include normalize-base;
-	@include normalize-links;
-	@include normalize-typography;
-	@include normalize-lists;
-	@include normalize-embedded;
-	@include normalize-figures;
-	@include normalize-forms;
-	@include normalize-tables;
+  @include normalize-html5;
+  @include normalize-base;
+  @include normalize-links;
+  @include normalize-typography;
+  @include normalize-lists;
+  @include normalize-embedded;
+  @include normalize-figures;
+  @include normalize-forms;
+  @include normalize-tables;
 }

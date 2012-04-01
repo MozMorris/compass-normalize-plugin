@@ -1,36 +1,36 @@
 @mixin normalize-base {
-	html {
-		@if ($include-ie-normalization
-		 or  $include-ie6-normalization
-		 or  $include-ie7-normalization) {
-			// Corrects text resizing oddly in IE6/7 when body font-size is set using em units
-			// http://clagnut.com/blog/348/#c790
-	  	font-size: 100%;
-		}
-		
-		@if $include-ios-normalization {
-			// Prevents iOS text size adjust after orientation change, without disabling user zoom
-			// www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
-	  	-webkit-text-size-adjust: 100%;
-	  	-ms-text-size-adjust: 100%;
-		}
-	}
+  html {
+    @if ($include-ie-normalization
+     or  $include-ie6-normalization
+     or  $include-ie7-normalization) {
+      // Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+      // http://clagnut.com/blog/348/#c790
+      font-size: 100%;
+    }
 
-	// Addresses font-family inconsistency between 'textarea' and other form elements.
-	html,
-	button,
-	input,
-	select,
-	textarea {
-	  font-family: sans-serif;
-	}
+    @if $include-ios-normalization {
+      // Prevents iOS text size adjust after orientation change, without disabling user zoom
+      // www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+  }
 
-	@if ($include-ie-normalization
-	 or  $include-ie6-normalization
-	 or  $include-ie7-normalization) {
-		// Addresses margins handled incorrectly in IE6/7
-		body {
-		  margin: 0;
-		}
-	}
+  // Addresses font-family inconsistency between 'textarea' and other form elements.
+  html,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: sans-serif;
+  }
+
+  @if ($include-ie-normalization
+   or  $include-ie6-normalization
+   or  $include-ie7-normalization) {
+    // Addresses margins handled incorrectly in IE6/7
+    body {
+      margin: 0;
+    }
+  }
 }

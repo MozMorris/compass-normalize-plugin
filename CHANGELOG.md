@@ -1,8 +1,13 @@
+v0.2.2 [Apr 1 2012]
+- - - - - - - - - - -
+
+Sets homepage to GitHub project.
+Changes indentation to 2 spaces.
+
 v0.2.1 [Mar 31 2012]
 - - - - - - - - - - -
 
 Fixes parenthesis.
-
 
 v0.2.0 [Mar 31 2012]
 - - - - - - - - - - -
