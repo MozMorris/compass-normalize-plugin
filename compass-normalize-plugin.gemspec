@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
     "templates/project/",
     "templates/project/manifest.rb",
     "templates/project/screen.scss",
+    "templates/project/_config.scss",
     "VERSION"
   ]
   

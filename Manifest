@@ -17,4 +17,5 @@ scss/normalize/_tables.scss
 scss/normalize/_typography.scss
 templates/project/manifest.rb
 templates/project/screen.scss
+templates/project/_config.scss
 VERSION
