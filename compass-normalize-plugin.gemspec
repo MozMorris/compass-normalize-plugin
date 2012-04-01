@@ -33,9 +33,10 @@ Gem::Specification.new do |s|
     "scss/normalize/_typography.scss",
     "templates/",
     "templates/project/",
+    "templates/project/_config.scss",
     "templates/project/manifest.rb",
     "templates/project/screen.scss",
-    "templates/project/_config.scss",
+
     "VERSION"
   ]
   
