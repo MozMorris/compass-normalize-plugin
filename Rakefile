@@ -7,7 +7,7 @@ begin
   Echoe.new('compass-normalize-plugin', open('VERSION').read) do |p|
     p.summary = "Makes browsers render HTML elements consistently and in line with modern standards."
     p.description = "This is a normalize.css extension for the Compass framework."
-    p.url = "http://roettger.us/"
+    p.url = "https://github.com/jroettger/compass-normalize-plugin"
     p.author = "Johannes Roettger"
     p.email = "johannes@roettger.us"
     p.dependencies = ["compass >=0.11.1"]
