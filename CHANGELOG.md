@@ -1,9 +1,9 @@
-v0.2.2 [Apr 1 2012]
+v0.2.2 [Apr 2 2012]
 - - - - - - - - - - -
 
-Sets homepage to GitHub project.
-Changes indentation to 2 spaces.
-Adds project template configuration variables.
+- Updates meta information
+- Changes indentation to 2 spaces.
+- Adds project template configuration variables.
 
 v0.2.1 [Mar 31 2012]
 - - - - - - - - - - -

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.version = "0.2.2"
-  s.date = %q{2012-03-31}
+  s.date = %q{2012-04-02}
 
   s.name = %q{compass-normalize-plugin}
   s.authors = ["Johannes Roettger", "Nicolas Gallagher", "Jonathan Neal"]
@@ -33,10 +33,8 @@ Gem::Specification.new do |s|
     "scss/normalize/_typography.scss",
     "templates/",
     "templates/project/",
-    "templates/project/_config.scss",
     "templates/project/manifest.rb",
     "templates/project/screen.scss",
-
     "VERSION"
   ]
   
