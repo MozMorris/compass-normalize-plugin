@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.summary = %q{Makes browsers render HTML elements consistently and in line with modern standards.}
   s.description = %q{This is a normalize.css extension for the Compass framework.}
   s.email = %q{johannes@roettger.us}
-  s.homepage = %q{https://github.com/jroettger/compass-normalize-plugin}
+  s.homepage = %q{http://jroettger.github.com/compass-normalize-plugin/}
 
   s.files = [
     "CHANGELOG.md",
