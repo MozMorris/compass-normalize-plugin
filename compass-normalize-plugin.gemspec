@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.version = "0.2.2"
-  s.date = %q{2012-04-02}
+  s.version = "0.2.3"
+  s.date = %q{2012-05-06}
 
   s.name = %q{compass-normalize-plugin}
   s.authors = ["Johannes Roettger", "Nicolas Gallagher", "Jonathan Neal"]

@@ -1,3 +1,8 @@
+v0.2.3 [May 6 2012]
+- - - - - - - - - - -
+
+- Changes configuration variables to compass standard naming scheme.
+
 v0.2.2 [Apr 2 2012]
 - - - - - - - - - - -
 

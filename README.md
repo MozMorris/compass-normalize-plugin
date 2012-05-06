@@ -35,11 +35,11 @@ different browsers. The default configuration includes support for all browsers.
 variables can be set to either `true` of `false` (default is `true`):
 
     // Internet Explorer
-    $include-ie-normalization
-    $include-ie6-normalization
-    $include-ie7-normalization
-    $include-ie8-normalization
-    $include-ie9-normalization
+    $legacy-support-for-ie
+    $legacy-support-for-ie6
+    $legacy-support-for-ie7
+    $legacy-support-for-ie8
+    $legacy-support-for-ie9
     
     // Firefox
     $include-ff-normalization
@@ -57,7 +57,7 @@ variables can be set to either `true` of `false` (default is `true`):
     $include-op-normalization
 
 The settings are processed using or, thus settings $include-ie-normalization: true; will include
-all IE normalization, even if $include-ie6-normalization is set to false.
+all IE normalization, even if $legacy-support-for-ie6 is set to false.
 
 ## Available mixins and imports
 <table>

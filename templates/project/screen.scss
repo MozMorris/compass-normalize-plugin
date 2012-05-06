@@ -2,11 +2,11 @@
 
 // Configuration
 // Internet Explorer
-$include-ie-normalization:					true;
-$include-ie6-normalization:					true;
-$include-ie7-normalization:					true;
-$include-ie8-normalization:					true;
-$include-ie9-normalization:					true;
+$legacy-support-for-ie:						true;
+$legacy-support-for-ie6:					true;
+$legacy-support-for-ie7:					true;
+$legacy-support-for-ie8:					true;
+$legacy-support-for-ie9:					true;
 
 // Firefox
 $include-ff-normalization:					true;

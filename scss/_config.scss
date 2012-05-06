@@ -7,14 +7,27 @@ $include-ie7-normalization:					true	!default;
 $include-ie8-normalization:					true	!default;
 $include-ie9-normalization:					true	!default;
 
+// For compatibility with compass variables
+$legacy-support-for-ie:							$include-ie-normalization;
+$legacy-support-for-ie6:						$include-ie6-normalization;
+$legacy-support-for-ie7:						$include-ie7-normalization;
+$legacy-support-for-ie8:						$include-ie8-normalization;
+$legacy-support-for-ie9:						$include-ie9-normalization;
+
 // Firefox
 $include-ff-normalization:					true	!default;
+$include-ff3-normalization:					true	!default;
+$include-ff4-normalization:					true	!default;
 
 // Safari
 $include-sa-normalization:					true	!default;
+$include-sa4-normalization:					true	!default;
+$include-sa5-normalization:					true	!default;
 
 // iOS
 $include-ios-normalization:					true	!default;
+$include-ios4-normalization:				true	!default;
+$include-ios5-normalization:				true	!default;
 
 // Chrome
 $include-chr-normalization:					true	!default;

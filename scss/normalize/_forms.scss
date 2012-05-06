@@ -1,7 +1,7 @@
 @mixin normalize-forms {
-  @if ($include-ie-normalization
-   or  $include-ie6-normalization
-   or  $include-ie7-normalization) {
+  @if ($legacy-support-for-ie
+   or  $legacy-support-for-ie6
+   or  $legacy-support-for-ie7) {
     // Corrects margin displayed oddly in IE6/7
     form {
       margin: 0;
@@ -16,11 +16,11 @@
   }
 
   legend {
-    @if ($include-ie-normalization
-     or  $include-ie6-normalization
-     or  $include-ie7-normalization
-     or  $include-ie8-normalization
-     or  $include-ie9-normalization) {
+    @if ($legacy-support-for-ie
+     or  $legacy-support-for-ie6
+     or  $legacy-support-for-ie7
+     or  $legacy-support-for-ie8
+     or  $legacy-support-for-ie9) {
       // Corrects color not being inherited in IE6/7/8/9
       border: 0;
       padding: 0;
@@ -31,9 +31,9 @@
       white-space: normal;
     }
     
-    @if ($include-ie-normalization
-     or  $include-ie6-normalization
-     or  $include-ie7-normalization) {
+    @if ($legacy-support-for-ie
+     or  $legacy-support-for-ie6
+     or  $legacy-support-for-ie7) {
       // Corrects alignment displayed oddly in IE6/7
       *margin-left: -7px;
     }
@@ -46,9 +46,9 @@
     // Corrects font size not being inherited in all browsers
     font-size: 100%;
   
-    @if ($include-ie-normalization
-     or  $include-ie6-normalization
-     or  $include-ie7-normalization
+    @if ($legacy-support-for-ie
+     or  $legacy-support-for-ie6
+     or  $legacy-support-for-ie7
      or  $include-ff-normalization
      or  $include-sa-normalization
      or  $include-chr-normalization) {
@@ -81,8 +81,8 @@
       -webkit-appearance: button;
     }
     
-    @if ($include-ie-normalization
-     or  $include-ie7-normalization) {
+    @if ($legacy-support-for-ie
+     or  $legacy-support-for-ie7) {
       // Removes inner spacing in IE7 without affecting normal text inputs
       // Known issue: inner spacing remains in IE6
       *overflow: visible;
@@ -97,22 +97,22 @@
 
   input[type="checkbox"],
   input[type="radio"] {
-    @if ($include-ie-normalization
-     or  $include-ie8-normalization
-     or  $include-ie9-normalization) {
+    @if ($legacy-support-for-ie
+     or  $legacy-support-for-ie8
+     or  $legacy-support-for-ie9) {
       // Addresses box sizing set to content-box in IE8/9
       box-sizing: border-box;
     }
   
-    @if ($include-ie-normalization
-     or  $include-ie8-normalization
-     or  $include-ie9-normalization) {
+    @if ($legacy-support-for-ie
+     or  $legacy-support-for-ie8
+     or  $legacy-support-for-ie9) {
       // Removes excess padding in IE8/9
       padding: 0;
     }
   
-    @if ($include-ie-normalization
-     or  $include-ie7-normalization) {
+    @if ($legacy-support-for-ie
+     or  $legacy-support-for-ie7) {
       // Removes excess padding in IE7
       // Known issue: excess padding remains in IE6
       *height: 13px;
@@ -154,11 +154,11 @@
   }
 
   textarea {
-    @if ($include-ie-normalization
-     or  $include-ie6-normalization
-     or  $include-ie7-normalization
-     or  $include-ie8-normalization
-     or  $include-ie9-normalization) {
+    @if ($legacy-support-for-ie
+     or  $legacy-support-for-ie6
+     or  $legacy-support-for-ie7
+     or  $legacy-support-for-ie8
+     or  $legacy-support-for-ie9) {
       // Removes default vertical scrollbar in IE6/7/8/9
       overflow: auto;
     }
