@@ -1,55 +1,20 @@
+// Legacy support for Internet Explorer and Firefox.
+// Use $legacy-support-for-ie6, $legacy-support-for-ie7 etc to disable support for specific
+// versions.
+$legacy-support-for-ie:				true;
+// $legacy-support-for-ie6: false;
+// $legacy-support-for-ie7: false;
+// $legacy-support-for-ie8: false;
+$legacy-support-for-ff:				true;
+// $legacy-support-for-ff3: false;
+
 @import "normalize";
-
-// Configuration
-// Internet Explorer
-$legacy-support-for-ie:						true;
-$legacy-support-for-ie6:					true;
-$legacy-support-for-ie7:					true;
-$legacy-support-for-ie8:					true;
-$legacy-support-for-ie9:					true;
-
-// Firefox
-$include-ff-normalization:					true;
-
-// Safari
-$include-sa-normalization:					true;
-
-// iOS
-$include-ios-normalization:					true;
-
-// Chrome
-$include-chr-normalization:					true;
-
-// Opera
-$include-op-normalization:					true;
-
 @include normalize;
 
-// It is also possible to use only parts of normalize.css
+// It is also possible to use only parts of normalize.css, i.e.:
 // 
-// @import "normalize/html5";
 // @include normalize-html5;
-// 
-// @import "normalize/base";
 // @include normalize-base;
-// 
-// @import "normalize/links";
 // @include normalize-links;
-//
-// @import "normalize/typography";
-// @include normalize-typography;
 // 
-// @import "normalize/lists";
-// @include normalize-lists;
-// 
-// @import "normalize/embedded";
-// @include normalize-embedded;
-// 
-// @import "normalize/figures";
-// @include normalize-figures;
-// 
-// @import "normalize/forms";
-// @include normalize-forms;
-// 
-// @import "normalize/tables";
-// @include normalize-tables;
+// ...

@@ -23,41 +23,23 @@ Import the plugin and use the mixin
 
 or include and use only parts of it:
 
-    @import "normalize/html5";
     @import "normalize/base";
-    
-    @include normalize-html5;
     @include normalize-base;
+    // ...
 
 ## Configuration
-Version 0.2 introduces some global configuration variables to remove unwanted optimizations for
-different browsers. The default configuration includes support for all browsers. The following 
-variables can be set to either `true` of `false` (default is `true`):
+Version 0.3 removes the option to include browser specific normalization and includes the option to
+support browsers that have reached their end of life, namely IE6 - 8 and Firefox 3. It is possible
+to override browser version specific values, e.g.:
 
-    // Internet Explorer
-    $legacy-support-for-ie
-    $legacy-support-for-ie6
-    $legacy-support-for-ie7
-    $legacy-support-for-ie8
-    $legacy-support-for-ie9
+    // Internet Explorer support, exclude IE6.
+    $legacy-support-for-ie: true;
+    $legacy-support-for-ie6: false;
+    // $legacy-support-for-ie7: false;
+    // $legacy-support-for-ie8: false;
     
-    // Firefox
-    $include-ff-normalization
-    
-    // Safari
-    $include-sa-normalization
-    
-    // iOS
-    $include-ios-normalization
-    
-    // Chrome
-    $include-chr-normalization
-    
-    // Opera
-    $include-op-normalization
-
-The settings are processed using or, thus settings $include-ie-normalization: true; will include
-all IE normalization, even if $legacy-support-for-ie6 is set to false.
+    // Turn Firefox support off
+		$legacy-support-for-ff: false;
 
 ## Available mixins and imports
 <table>

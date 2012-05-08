@@ -1,3 +1,9 @@
+v0.2.4 [May 8 2012]
+- - - - - - - - - - -
+
+- Improves the handling of legacy support settings.
+
+
 v0.2.3 [May 6 2012]
 - - - - - - - - - - -
 

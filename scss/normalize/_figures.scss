@@ -1,15 +1,6 @@
 @mixin normalize-figures {
-  @if ($legacy-support-for-ie
-   or  $legacy-support-for-ie6
-   or  $legacy-support-for-ie7
-   or  $legacy-support-for-ie8
-   or  $legacy-support-for-ie9
-   or  $include-sa-normalization
-   or  $include-sa5-normalization
-   or  $include-op-normalization) {
-    // Addresses margin not present in IE6/7/8/9, S5, O11
-    figure {
-      margin: 0;
-    }
+  // Addresses margin not present in IE6/7/8/9, S5, O11
+  figure {
+    margin: 0;
   }
 }

@@ -1,7 +1,5 @@
 @mixin normalize-lists {
-  @if ($legacy-support-for-ie
-   or  $legacy-support-for-ie6
-   or  $legacy-support-for-ie7) {
+  @if ($legacy-support-for-ie6 or $legacy-support-for-ie7) {
     // Addresses margins set differently in IE6/7
     dl,
     menu,
@@ -22,8 +20,7 @@
     }
   }
 
-  @if ($legacy-support-for-ie
-   or  $legacy-support-for-ie7) {
+  @if $legacy-support-for-ie7 {
     // Corrects list images handled incorrectly in IE7
     nav {
       ul,

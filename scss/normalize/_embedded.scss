@@ -1,28 +1,17 @@
 @mixin normalize-embedded {
   img {
-    @if ($legacy-support-for-ie
-     or  $legacy-support-for-ie6
-     or  $legacy-support-for-ie7
-     or  $legacy-support-for-ie8
-     or  $legacy-support-for-ie9
-     or  $include-ff-normalization
-     or  $include-ff3-normalization) {
-      // Removes border when inside 'a' element in IE6/7/8/9, FF3
-      border: 0; 
-    }
+    // Removes border when inside 'a' element in IE6/7/8/9, FF3
+    border: 0; 
     
-    @if ($legacy-support-for-ie
-     or  $legacy-support-for-ie7) {
+    @if $legacy-support-for-ie7 {
       // Improves image quality when scaled in IE7
       // code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
       -ms-interpolation-mode: bicubic;
     }
   }
 
-  @if $legacy-support-for-ie9 {
-    // Corrects overflow displayed oddly in IE9
-    svg:not(:root) {
-      overflow: hidden;
-    }
+  // Corrects overflow displayed oddly in IE9
+  svg:not(:root) {
+    overflow: hidden;
   }
 }
