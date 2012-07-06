@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>compass-normalize-plugin by jzorn</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">compass-normalize-plugin</h1>
+        <p class="header">A normalize.css plugin for the Compass framework.</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/jzorn/compass-normalize-plugin/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/jzorn/compass-normalize-plugin/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/jzorn/compass-normalize-plugin">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/jzorn">jzorn</a></p>
+
+
+      </header>
+      <section>
+        <h1>normalize.css - Compass Plugin</h1>
+
+<p>A Compass plugin of <a href="https://github.com/necolas/normalize.css/">Nicolas Gallagher's normalize.css</a>
+project.</p>
+
+<h2>Installation</h2>
+
+<p>Check out the <a href="https://rubygems.org/gems/compass-normalize-plugin">gem on rubygems.org</a>.</p>
+
+<pre><code>$ gem install compass-normalize-plugin
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>Execute the following command to create a new project with compass, using normalize.css:</p>
+
+<pre><code>$ compass create my_project -r normalize --using normalize
+</code></pre>
+
+<p>To add normalize.css to an existing project, edit <code>config.rb</code> and add <code>compass</code> to your imports:</p>
+
+<pre><code>require 'normalize'
+</code></pre>
+
+<p>Import the plugin and use the mixin</p>
+
+<pre><code>@import "normalize";
+@include normalize;
+</code></pre>
+
+<p>or include and use only parts of it:</p>
+
+<pre><code>@import "normalize/html5";
+@import "normalize/base";
+
+@include normalize-html5;
+@include normalize-base;
+</code></pre>
+
+<h2>Configuration</h2>
+
+<p>Version 0.2 introduces some global configuration variables to remove unwanted optimizations for
+different browsers. The default configuration includes support for all browsers. The following 
+variables can be set to either <code>true</code> of <code>false</code> (default is <code>true</code>):</p>
+
+<pre><code>// Internet Explorer
+$include-ie-normalization
+$include-ie6-normalization
+$include-ie7-normalization
+$include-ie8-normalization
+$include-ie9-normalization
+
+// Firefox
+$include-ff-normalization
+
+// Safari
+$include-sa-normalization
+
+// iOS
+$include-ios-normalization
+
+// Chrome
+$include-chr-normalization
+
+// Opera
+$include-op-normalization
+</code></pre>
+
+<p>The settings are processed using or, thus settings $include-ie-normalization: true; will include
+all IE normalization, even if $include-ie6-normalization is set to false.</p>
+
+<h2>Available mixins and imports</h2>
+
+<table>
+<tr>
+<th>import</th>
+            <th>mixin</th>
+        </tr>
+<tr>
+<td>normalize-html5</td>
+            <td>normalize/html5</td>
+        </tr>
+<tr>
+<td>normalize-base</td>
+            <td>normalize/base</td>
+        </tr>
+<tr>
+<td>normalize-links</td>
+            <td>normalize/links</td>
+        </tr>
+<tr>
+<td>normalize-typography</td>
+            <td>normalize/typography</td>
+        </tr>
+<tr>
+<td>normalize-lists</td>
+            <td>normalize/lists</td>
+        </tr>
+<tr>
+<td>normalize-embedded</td>
+            <td>normalize/embedded</td>
+        </tr>
+<tr>
+<td>normalize-figures</td>
+            <td>normalize/figures</td>
+        </tr>
+<tr>
+<td>normalize-forms</td>
+            <td>normalize/forms</td>
+        </tr>
+<tr>
+<td>normalize-tables</td>
+            <td>normalize/tables</td>
+        </tr>
+</table><h2>License</h2>
+
+<p>Public domain</p>
+
+<h2>Acknowledgements</h2>
+
+<ul>
+<li>
+<a href="https://github.com/necolas/normalize.css/">Normalize.css</a> is a project by
+<a href="http://github.com/necolas">Nicolas Gallagher</a> and
+<a href="http://github.com/jonathantneal">Jonathan Neal</a>.</li>
+<li>
+<a href="https://github.com/jroettger/compass-normalize-plugin">compass-normalize-plugin</a> is a
+<a href="http://compass-style.org">Compass</a> plugin by <a href="http://github.com/jzorn">Johannes Zorn</a>.</li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-30594426-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
