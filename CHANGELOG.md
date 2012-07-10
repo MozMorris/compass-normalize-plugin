@@ -1,3 +1,8 @@
+v.0.3.1 [Jul 10 2012]
+- - - - - - - - - - -
+
+- Corrects the package meta information.
+
 v0.2.4 [May 8 2012]
 - - - - - - - - - - -
 

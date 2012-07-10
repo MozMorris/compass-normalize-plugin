@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.version = "0.3.0"
-  s.date = %q{2012-05-08}
+  s.version = "0.3.1"
+  s.date = %q{2012-07-10}
 
   s.name = %q{compass-normalize-plugin}
   s.authors = ["Johannes Roettger", "Nicolas Gallagher", "Jonathan Neal"]
   s.summary = %q{Makes browsers render HTML elements consistently and in line with modern standards.}
   s.description = %q{This is a normalize.css extension for the Compass framework.}
-  s.email = %q{johannes@roettger.us}
-  s.homepage = %q{http://jroettger.github.com/compass-normalize-plugin/}
+  s.email = %q{johannes@zorn.in}
+  s.homepage = %q{http://jzorn.github.com/compass-normalize-plugin/}
 
   s.files = [
     "CHANGELOG.md",
