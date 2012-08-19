@@ -1,6 +1,6 @@
 @mixin normalize-embedded {
   img {
-    // Removes border when inside 'a' element in IE6/7/8/9, FF3
+    // Removes border when inside `a` element in IE 6/7/8/9, Firefox 3
     border: 0; 
     
     @if $legacy-support-for-ie7 {
@@ -10,7 +10,7 @@
     }
   }
 
-  // Corrects overflow displayed oddly in IE9
+  // Corrects overflow displayed oddly in IE 9
   svg:not(:root) {
     overflow: hidden;
   }

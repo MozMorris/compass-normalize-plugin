@@ -1,11 +1,11 @@
 @mixin normalize-links {
   a {
-     // Addresses outline displayed oddly in Chrome
+     // Addresses `outline` inconssitency between Chrome and other browsers.
      &:focus {
        outline: thin dotted;
      }
 
-    // Improves readability when focused and also mouse hovered in all browsers
+    // Improves readability when focused and also mouse hovered in all browsers.
     // people.opera.com/patrickl/experiments/keyboard/test
     &:hover,
     &:active {

@@ -1,4 +1,11 @@
-v.0.3.1 [Jul 10 2012]
+[v.0.3.2] [Aug 18 2012]
+- - - - - - - - - - - 
+
+- Synced with Normalize.css version 1.0 
+- Mainly comment changes and a couple of code fixes
+
+
+[v.0.3.1] [Jul 10 2012]
 - - - - - - - - - - -
 
 - Corrects the package meta information.
