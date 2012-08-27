@@ -1,7 +1,7 @@
 @mixin normalize-base {
   html {
     @if ($legacy-support-for-ie6 or  $legacy-support-for-ie7) {
-      // Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+      // Corrects text resizing oddly in IE6/7 when body `font-size` is set using `em` units.
       // http://clagnut.com/blog/348/#c790
       font-size: 100%;
     }
@@ -12,7 +12,7 @@
     -ms-text-size-adjust: 100%;
   }
 
-  // Addresses font-family inconsistency between 'textarea' and other form elements.
+  // Addresses font-family inconsistency between `textarea` and other form elements.
   html,
   button,
   input,
@@ -22,7 +22,7 @@
   }
 
   @if ($legacy-support-for-ie6 or $legacy-support-for-ie7) {
-    // Addresses margins handled incorrectly in IE6/7
+    // Addresses margins handled incorrectly in IE 6/7
     body {
       margin: 0;
     }
