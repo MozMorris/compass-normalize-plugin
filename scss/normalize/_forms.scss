@@ -1,11 +1,4 @@
 @mixin normalize-forms {
-  @if ($legacy-support-for-ie6 or $legacy-support-for-ie7) {
-    // Corrects margin displayed oddly in IE 6/7
-    form {
-      margin: 0;
-    }
-  }
-
   // Define consistent border, margin, and padding.
   fieldset {
     border: 1px solid #c0c0c0;
@@ -14,56 +7,45 @@
   }
   
   legend {
-// Corrects color not being inherited in IE 6/7/8/9.
-    border: 0; 
+    // Corrects color not being inherited in IE 8/9.
+    border: 0;
+    // Remove padding so people aren't caught out if they zero out fieldsets.
     padding: 0;
-    
-    @if $legacy-support-for-ff3 {
-// Corrects text not wrapping in Firefox 3.
-      white-space: normal;
-    }
-    
-    @if ($legacy-support-for-ie6 or $legacy-support-for-ie7) {
-// Corrects alignment displayed oddly in IE 6/7      
-      *margin-left: -7px;
-    }
   }
 
   button,
   input,
   select,
   textarea {
+    // Corrects font family not being inherited in all browsers.
+    font-family: inherit;
     // Corrects font size not being inherited in all browsers.
     font-size: 100%;
-  
-    // Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5, Chrome.
+    // Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
     margin: 0;
-    
-    // Improves appearance and consistency in all browsers.
-    vertical-align: baseline;
-    *vertical-align: middle;
   }
 
-  // Addresses Firefox 3+ setting `line-height` on `input` using `!important` in the UA stylesheet.
+  // Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+  // the UA stylesheet.
   button,
   input {
     line-height: normal;
   }
-// 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls.
-// 2. Corrects inability to style clickable `input` types in iOS.
-// 3. Improves usability and consistency of cursor style between image-type `input` and others.
-// 4. Removes inner spacing in IE 7 without affecting normal text inputs. -  Known issue: inner spacing remains in IE 6.
 
+  // 1. 
+  // 2. Corrects inability to style clickable `input` types in iOS.
+  // 3. Improves usability and consistency of cursor style between image-type `input` and others.
+
+
+  // Avoid the WebKit bug in Android 4.0.* where (*) destroys native `audio` and `video` controls.
   button,
-  html input[type="button"], // 1 
+  html input[type="button"], 
   input[type="reset"],
   input[type="submit"] {
-    -webkit-appearance: button; // 2
-    cursor: pointer; // 3
-    
-    @if $legacy-support-for-ie7 {
-      *overflow: visible; // 4
-    }
+    // *: Corrects inability to style clickable `input` types in iOS.
+    -webkit-appearance: button;
+    // Improves usability and consistency of cursor style between image-type `input` and others.
+    cursor: pointer;
   }
 
 // Re-set default cursor for disabled elements.
@@ -79,13 +61,6 @@
   
     // Removes excess padding in IE 8/9.
     padding: 0;
-  
-    @if $legacy-support-for-ie7 {
-      // Removes excess padding in IE 7.
-      // Known issue: excess padding remains in IE 6.
-      *height: 13px;
-      *width: 13px;
-    }
   }
 
   input[type="search"] {
@@ -104,18 +79,15 @@
     -webkit-appearance: none;
   }
 
-  @if $legacy-support-for-ff3 {
-    // Removes inner padding and border in Firefox 3+.
-    // www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
-    button::-moz-focus-inner,
-    input::-moz-focus-inner {
-      border: 0;
-      padding: 0;
-    }
+  // Removes inner padding and border in Firefox 4+.
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
   }
 
   textarea {
-    // Removes default vertical scrollbar in IE 6/7/8/9
+    // Removes default vertical scrollbar in IE 8/9
     overflow: auto;
     
     // Improves readability and alignment in all browsers

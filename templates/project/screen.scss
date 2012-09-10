@@ -1,13 +1,3 @@
-// Legacy support for Internet Explorer and Firefox.
-// Use $legacy-support-for-ie6, $legacy-support-for-ie7 etc to disable support for specific
-// versions.
-$legacy-support-for-ie:				true;
-// $legacy-support-for-ie6: false;
-// $legacy-support-for-ie7: false;
-// $legacy-support-for-ie8: false;
-$legacy-support-for-ff:				true;
-// $legacy-support-for-ff3: false;
-
 @import "normalize";
 @include normalize;
 

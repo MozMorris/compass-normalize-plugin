@@ -1,13 +1,7 @@
 @mixin normalize-embedded {
   img {
-    // Removes border when inside `a` element in IE 6/7/8/9, Firefox 3
+    // Removes border when inside `a` element in IE 8/9.
     border: 0; 
-    
-    @if $legacy-support-for-ie7 {
-      // Improves image quality when scaled in IE7
-      // code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
-      -ms-interpolation-mode: bicubic;
-    }
   }
 
   // Corrects overflow displayed oddly in IE 9

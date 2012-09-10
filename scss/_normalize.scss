@@ -1,10 +1,7 @@
-@import "config";
-
 @import "normalize/html5";
 @import "normalize/base";
 @import "normalize/links";
 @import "normalize/typography";
-@import "normalize/lists";
 @import "normalize/embedded";
 @import "normalize/figures";
 @import "normalize/forms";
@@ -15,7 +12,6 @@
   @include normalize-base;
   @include normalize-links;
   @include normalize-typography;
-  @include normalize-lists;
   @include normalize-embedded;
   @include normalize-figures;
   @include normalize-forms;

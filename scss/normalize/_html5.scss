@@ -1,5 +1,5 @@
 @mixin normalize-html5 {
-    // Corrects `block` display not defined in IE6/7/8/9 & FF3
+    // Corrects `block` display not defined in IE 8/9.
    article,
    aside,
    details,
@@ -14,13 +14,11 @@
      display: block;
    }
 
-   // Corrects `inline-block` display not defined in IE6/7/8/9 and Firefox 3.
+   // Corrects `inline-block` display not defined in IE 8/9.
    audio,
    canvas,
    video {
      display: inline-block;
-     *display: inline;
-     *zoom: 1;
    }
 
   // Prevents modern browsers from displaying `audio` without controls
@@ -30,8 +28,7 @@
     height: 0;
   }
 
-   // Addresses styling for `hidden` attribute not present in IE7/8/9, Firefox 3, and Safari 4
-   // Known issue: no IE6 support
+   // Addresses styling for `hidden` attribute not present in IE 8/9.
    [hidden] {
      display: none;
    }

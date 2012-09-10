@@ -27,20 +27,6 @@ or include and use only parts of it:
     @include normalize-base;
     // ...
 
-## Configuration
-Version 0.3 removes the option to include browser specific normalization and includes the option to
-support browsers that have reached their end of life, namely IE6 - 8 and Firefox 3. It is possible
-to override browser version specific values, e.g.:
-
-    // Internet Explorer support, exclude IE6.
-    $legacy-support-for-ie: true;
-    $legacy-support-for-ie6: false;
-    // $legacy-support-for-ie7: false;
-    // $legacy-support-for-ie8: false;
-    
-    // Turn Firefox support off
-		$legacy-support-for-ff: false;
-
 ## Available mixins and imports
 <table>
 	<thead>

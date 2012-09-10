@@ -1,5 +1,5 @@
 @mixin normalize-figures {
-  // Addresses margin not present in IE 6/7/8/9, Safari 5, Opera 11.
+  // Addresses margin not present in IE 8/9, Safari 5.
   figure {
     margin: 0;
   }
