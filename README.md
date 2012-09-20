@@ -82,4 +82,4 @@ Public domain
 [Nicolas Gallagher](http://github.com/necolas) and
 [Jonathan Neal](http://github.com/jonathantneal).
 * [compass-normalize-plugin](https://github.com/jroettger/compass-normalize-plugin) is a
-[Compass](http://compass-style.org) plugin by [Johannes Röttger](http://github.com/jroettger).
+[Compass](http://compass-style.org) plugin by [Johannes Zorn](http://github.com/jzorn).
