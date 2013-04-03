@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.version = "0.4.0"
+  s.version = "0.4.1"
   s.date = %q{2012-09-10}
 
   s.name = %q{compass-normalize-plugin}
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.files = [
     "CHANGELOG.md",
     "compass-normalize-plugin.gemspec",
-    "lib/normalize.rb", 
+    "lib/normalize.rb",
     "Manifest",
     "Rakefile",
     "README.md",
@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
     "templates/project/screen.scss",
     "VERSION"
   ]
-  
+
   s.rubygems_version = %q{1.3.6}
   s.add_dependency(%q<compass>, [">= 0.11.1"])
 end

@@ -1,10 +1,10 @@
 @mixin normalize-embedded {
   img {
-    // Removes border when inside `a` element in IE 8/9.
-    border: 0; 
+    // Remove border when inside `a` element in IE 8/9.
+    border: 0;
   }
 
-  // Corrects overflow displayed oddly in IE 9
+  // Correct overflow displayed oddly in IE 9
   svg:not(:root) {
     overflow: hidden;
   }

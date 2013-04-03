@@ -1,5 +1,5 @@
 @mixin normalize-html5 {
-    // Corrects `block` display not defined in IE 8/9.
+    // Correct `block` display not defined in IE 8/9.
    article,
    aside,
    details,
@@ -8,27 +8,28 @@
    footer,
    header,
    hgroup,
+   main,
    nav,
    section,
    summary {
      display: block;
    }
 
-   // Corrects `inline-block` display not defined in IE 8/9.
+   // Correct `inline-block` display not defined in IE 8/9.
    audio,
    canvas,
    video {
      display: inline-block;
    }
 
-  // Prevents modern browsers from displaying `audio` without controls
+  // Prevent modern browsers from displaying `audio` without controls.
   // Remove excess height in iOS 5 devices.
   audio:not([controls]) {
     display: none;
     height: 0;
   }
 
-   // Addresses styling for `hidden` attribute not present in IE 8/9.
+   // Address styling not present in IE 8/9.
    [hidden] {
      display: none;
    }

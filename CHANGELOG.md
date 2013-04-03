@@ -1,3 +1,8 @@
+[v.0.4.1] [Apr 3 2013]
+- - - - - - - - - - - 
+
+- Synced with Normalize.css version 2.1.0 
+
 [v.0.4.0] [Sep 10 2012]
 - - - - - - - - - - - 
 

@@ -1,6 +1,6 @@
 @mixin normalize-base {
   html {
-    // Sets default font family to sans-serif.
+    // Set default font family to sans-serif.
     font-family: sans-serif;
 
     // Prevents iOS text size adjust after orientation change, without disabling user zoom
@@ -17,7 +17,7 @@
     font-family: sans-serif;
   }
 
-  // Removes default margin.
+  // Remove default margin.
   body {
     margin: 0;
   }
